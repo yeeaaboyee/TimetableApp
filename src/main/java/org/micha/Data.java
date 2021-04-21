@@ -16,7 +16,8 @@ public class Data {
 
     public Data() {
         try {
-            File timetable = new File("C:\\Users\\micha\\IdeaProjects\\TimetablePlus\\src\\main\\java\\org\\micha\\Timetable.json");
+            ClassLoader classloader = this.getClass().getClassLoader();
+            File timetable = new File(classloader.getResource("Timetable.json").getFile());
             ObjectMapper om = new ObjectMapper();
             JsonNode node = om.readTree(timetable).get("Classes");
             for (final JsonNode objNode : node) {
@@ -44,7 +45,8 @@ public class Data {
     public void refreshData() {
         try {
             theList.clear();
-            File timetable = new File("C:\\Users\\micha\\IdeaProjects\\TimetablePlus\\src\\main\\java\\org\\micha\\Timetable.json");
+            ClassLoader classloader = this.getClass().getClassLoader();
+            File timetable = new File(classloader.getResource("Timetable.json").getFile());
             ObjectMapper om = new ObjectMapper();
             JsonNode node = om.readTree(timetable).get("Classes");
             for (final JsonNode objNode : node) {
@@ -68,7 +70,8 @@ public class Data {
 
     public void addClass(String name, String lecturer, String type, String day, String time, String length, String notes) {
         try {
-            File timetable = new File("C:\\Users\\micha\\IdeaProjects\\TimetablePlus\\src\\main\\java\\org\\micha\\Timetable.json");
+            ClassLoader classloader = this.getClass().getClassLoader();
+            File timetable = new File(classloader.getResource("Timetable.json").getFile());
             ObjectMapper mapper = new ObjectMapper();
             mapper.enable(SerializationFeature.INDENT_OUTPUT);
 
@@ -99,7 +102,8 @@ public class Data {
 
     public void deleteClass(int id) {
         try {
-            File timetable = new File("C:\\Users\\micha\\IdeaProjects\\TimetablePlus\\src\\main\\java\\org\\micha\\Timetable.json");
+            ClassLoader classloader = this.getClass().getClassLoader();
+            File timetable = new File(classloader.getResource("Timetable.json").getFile());
             ObjectMapper mapper = new ObjectMapper();
             mapper.enable(SerializationFeature.INDENT_OUTPUT);
             ObjectNode root = (ObjectNode) mapper.readTree(timetable);
@@ -122,7 +126,8 @@ public class Data {
 
     public void editClass(int id, Class replacementClass) {
         try {
-            File timetable = new File("C:\\Users\\micha\\IdeaProjects\\TimetablePlus\\src\\main\\java\\org\\micha\\Timetable.json");
+            ClassLoader classloader = this.getClass().getClassLoader();
+            File timetable = new File(classloader.getResource("Timetable.json").getFile());
             ObjectMapper mapper = new ObjectMapper();
             mapper.enable(SerializationFeature.INDENT_OUTPUT);
             ObjectNode root = (ObjectNode) mapper.readTree(timetable);
