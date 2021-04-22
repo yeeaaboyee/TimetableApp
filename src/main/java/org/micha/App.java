@@ -8,8 +8,13 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.Pane;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
+import javafx.scene.text.Text;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
@@ -40,11 +45,125 @@ public class App extends Application {
             deleteClassButton.setOnAction(value -> {
                 openDeleteClassWindow(data);
             });
-            FileInputStream input = new FileInputStream("C:\\Users\\micha\\IdeaProjects\\TimetablePlus\\src\\main\\java\\org\\micha\\timetable bg.png");
-            Image image = new Image(input);
-            ImageView imageView = new ImageView(image);
-            StackPane theStack = new StackPane(imageView);
-            var scene = new Scene(new VBox(theStack, newClassButton, editClassButton, deleteClassButton));
+
+            ClassLoader classloader = this.getClass().getClassLoader();
+            FileInputStream input1 = new FileInputStream(classloader.getResource("timetable_bg1.png").getFile());
+            Image image1 = new Image(input1);
+            FileInputStream input2 = new FileInputStream(classloader.getResource("timetable_bg2.png").getFile());
+            Image image2 = new Image(input2);
+            FileInputStream input3 = new FileInputStream(classloader.getResource("timetable_bg3.png").getFile());
+            Image image3 = new Image(input3);
+            FileInputStream input4 = new FileInputStream(classloader.getResource("timetable_bg4.png").getFile());
+            Image image4 = new Image(input4);
+            FileInputStream input5 = new FileInputStream(classloader.getResource("timetable_bg5.png").getFile());
+            Image image5 = new Image(input5);
+            FileInputStream input6 = new FileInputStream(classloader.getResource("timetable_bg6.png").getFile());
+            Image image6 = new Image(input6);
+            FileInputStream input7 = new FileInputStream(classloader.getResource("timetable_bg7.png").getFile());
+            Image image7 = new Image(input7);
+            FileInputStream input8 = new FileInputStream(classloader.getResource("timetable_bg8.png").getFile());
+            Image image8 = new Image(input8);
+
+            ImageView imageView1 = new ImageView(image1);
+            Pane v1 = new Pane(imageView1);
+            ImageView imageView2 = new ImageView(image2);
+            Pane v2 = new Pane(imageView2);
+            ImageView imageView3 = new ImageView(image3);
+            Pane v3 = new Pane(imageView3);
+            ImageView imageView4 = new ImageView(image4);
+            Pane v4 = new Pane(imageView4);
+            ImageView imageView5 = new ImageView(image5);
+            Pane v5 = new Pane(imageView5);
+            ImageView imageView6 = new ImageView(image6);
+            Pane v6 = new Pane(imageView6);
+            ImageView imageView7 = new ImageView(image7);
+            Pane v7 = new Pane(imageView7);
+            ImageView imageView8 = new ImageView(image8);
+            Pane v8 = new Pane(imageView8);
+
+            for (int i = 0; i < data.getData().size(); i++) {
+                if (data.getData().get(i).getDay().equals("Monday")) {
+                    Rectangle temp = new Rectangle();
+                    temp.setY(timeToCoordinates(data.getData().get(i).getTime()));
+                    temp.setX(1);
+                    temp.setWidth(140);
+                    temp.setHeight(timeToCoordinates(data.getData().get(i).getLength()) - temp.getY()); //49
+                    temp.setFill(Color.valueOf("#97C5FF"));
+                    temp.setStroke(Color.BLACK);
+                    v2.getChildren().add(temp);
+                    temp.toFront();
+                }
+                else if (data.getData().get(i).getDay().equals("Tuesday")) {
+                    Rectangle temp = new Rectangle();
+                    temp.setY(timeToCoordinates(data.getData().get(i).getTime()));
+                    temp.setX(1);
+                    temp.setWidth(140);
+                    temp.setHeight(timeToCoordinates(data.getData().get(i).getLength()) - temp.getY()); //49
+                    temp.setFill(Color.valueOf("#97C5FF"));
+                    temp.setStroke(Color.BLACK);
+                    v3.getChildren().add(temp);
+                    temp.toFront();
+                }
+                else if (data.getData().get(i).getDay().equals("Wednesday")) {
+                    Rectangle temp = new Rectangle();
+                    temp.setY(timeToCoordinates(data.getData().get(i).getTime()));
+                    temp.setX(1);
+                    temp.setWidth(140);
+                    temp.setHeight(timeToCoordinates(data.getData().get(i).getLength()) - temp.getY()); //49
+                    temp.setFill(Color.valueOf("#97C5FF"));
+                    temp.setStroke(Color.BLACK);
+                    v4.getChildren().add(temp);
+                    temp.toFront();
+                }
+                else if (data.getData().get(i).getDay().equals("Thursday")) {
+                    Rectangle temp = new Rectangle();
+                    temp.setY(timeToCoordinates(data.getData().get(i).getTime()));
+                    temp.setX(1);
+                    temp.setWidth(140);
+                    temp.setHeight(timeToCoordinates(data.getData().get(i).getLength()) - temp.getY()); //49
+                    temp.setFill(Color.valueOf("#97C5FF"));
+                    temp.setStroke(Color.BLACK);
+                    v5.getChildren().add(temp);
+                    temp.toFront();
+                }
+                else if (data.getData().get(i).getDay().equals("Friday")) {
+                    Rectangle temp = new Rectangle();
+                    temp.setY(timeToCoordinates(data.getData().get(i).getTime()));
+                    temp.setX(1);
+                    temp.setWidth(140);
+                    temp.setHeight(timeToCoordinates(data.getData().get(i).getLength()) - temp.getY()); //49
+                    temp.setFill(Color.valueOf("#97C5FF"));
+                    temp.setStroke(Color.BLACK);
+                    v6.getChildren().add(temp);
+                    temp.toFront();
+                }
+                else if (data.getData().get(i).getDay().equals("Saturday")) {
+                    Rectangle temp = new Rectangle();
+                    temp.setY(timeToCoordinates(data.getData().get(i).getTime()));
+                    temp.setX(1);
+                    temp.setWidth(140);
+                    temp.setHeight(timeToCoordinates(data.getData().get(i).getLength()) - temp.getY()); //49
+                    temp.setFill(Color.valueOf("#97C5FF"));
+                    temp.setStroke(Color.BLACK);
+                    v7.getChildren().add(temp);
+                    temp.toFront();
+                }
+                else if (data.getData().get(i).getDay().equals("Sunday")) {
+                    Rectangle temp = new Rectangle();
+                    temp.setY(timeToCoordinates(data.getData().get(i).getTime()));
+                    temp.setX(1);
+                    temp.setWidth(140);
+                    temp.setHeight(timeToCoordinates(data.getData().get(i).getLength()) - temp.getY()); //49
+                    temp.setFill(Color.valueOf("#97C5FF"));
+                    temp.setStroke(Color.BLACK);
+                    v8.getChildren().add(temp);
+                    temp.toFront();
+                }
+            }
+
+
+            HBox hbox = new HBox(v1, v2, v3, v4, v5, v6, v7, v8);
+            var scene = new Scene(new VBox(hbox, newClassButton, editClassButton, deleteClassButton));
             stage.setTitle("TimeTable Plus");
             stage.setScene(scene);
             stage.show();
@@ -53,7 +172,7 @@ public class App extends Application {
         }
     }
 
-    public void openNewClassWindow(Data data) {
+    private void openNewClassWindow(Data data) {
         Stage newClassStage = new Stage();
         newClassStage.setTitle("New Class...");
         newClassStage.initModality(Modality.APPLICATION_MODAL);
@@ -92,7 +211,7 @@ public class App extends Application {
         newClassStage.show();
     }
 
-    public void openEditClassWindow(int id, Data data) {
+    private void openEditClassWindow(int id, Data data) {
         Stage editClassStage = new Stage();
         editClassStage.setTitle("Edit Class...");
         editClassStage.initModality(Modality.APPLICATION_MODAL);
@@ -132,7 +251,7 @@ public class App extends Application {
         editClassStage.show();
     }
 
-    public void openEditClassSelectionWindow(Data data) {
+    private void openEditClassSelectionWindow(Data data) {
         VBox theVBox = new VBox();
         Stage editClassSelectionStage = new Stage();
         for (int i = 0; i < data.getData().size(); i++) {
@@ -167,16 +286,15 @@ public class App extends Application {
         VBox theVBox = new VBox();
         Stage deleteClassStage = new Stage();
         for (int i = 0; i < data.getData().size(); i++) {
-            Class tempClass = data.getData().get(i);
             Button button = new Button(
-                    tempClass.getId() + ", " +
-                            tempClass.getName() + ", " +
-                            tempClass.getLecturer() + ", " +
-                            tempClass.getType() + ", " +
-                            tempClass.getDay() + ", " +
-                            tempClass.getTime() + ", " +
-                            tempClass.getLength() + ", " +
-                            tempClass.getNotes()
+                    data.getData().get(i).getId() + ", " +
+                            data.getData().get(i).getName() + ", " +
+                            data.getData().get(i).getLecturer() + ", " +
+                            data.getData().get(i).getType() + ", " +
+                            data.getData().get(i).getDay() + ", " +
+                            data.getData().get(i).getTime() + ", " +
+                            data.getData().get(i).getLength() + ", " +
+                            data.getData().get(i).getNotes()
             );
             int finalI = i;
             button.setOnAction(value -> {
@@ -192,6 +310,12 @@ public class App extends Application {
         Scene scene = new Scene(theVBox);
         deleteClassStage.setScene(scene);
         deleteClassStage.show();
+    }
+
+    private double timeToCoordinates(String theTime) {
+        int partOne = (Integer.parseInt(theTime.substring(0, 2)) - 8) * 100;
+        double timeInt = (Integer.parseInt(theTime.substring(3)) / 0.6) + partOne;
+        return ((timeInt / 1100) * 550) + 75;
     }
 
     public static void main(String[] args) {

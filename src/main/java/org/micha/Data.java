@@ -110,7 +110,7 @@ public class Data {
             ArrayNode array = (ArrayNode) root.get("Classes");
 
             for (int i = 0; i < array.size(); i++) {
-                if (array.get(i).get("ID").asInt() == id) {
+                if (id == i) {
                     array.remove(i);
                     break;
                 }

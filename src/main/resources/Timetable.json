@@ -5,8 +5,8 @@
     "Lecturer" : "Dr.Papp Gábor",
     "Type" : "Lecture",
     "Day" : "Monday",
-    "Time" : "5:00",
-    "Length" : "2:30",
+    "Time" : "08:00",
+    "Length" : "10:00",
     "Notes" : "111"
   }, {
     "ID" : 1,
@@ -15,7 +15,7 @@
     "Type" : "Lecture",
     "Day" : "Tuesday",
     "Time" : "12:00",
-    "Length" : "1:30",
+    "Length" : "13:30",
     "Notes" : "222"
   }, {
     "ID" : 2,
@@ -23,8 +23,8 @@
     "Lecturer" : "Dr.Pollák Edit",
     "Type" : "Lecture",
     "Day" : "Tuesday",
-    "Time" : "2:00",
-    "Length" : "4:00",
+    "Time" : "14:00",
+    "Length" : "18:00",
     "Notes" : "333"
   }, {
     "ID" : 3,
@@ -32,8 +32,8 @@
     "Lecturer" : "Dr.Fekete Csaba",
     "Type" : "Lecture",
     "Day" : "Wednesday",
-    "Time" : "2:00",
-    "Length" : "4:00",
+    "Time" : "14:00",
+    "Length" : "18:00",
     "Notes" : "444"
   }, {
     "ID" : 4,
@@ -41,17 +41,26 @@
     "Lecturer" : "Dr.Gazdag Zoltán",
     "Type" : "Lecture",
     "Day" : "Thursday",
-    "Time" : "5:00",
-    "Length" : "2:30",
+    "Time" : "17:00",
+    "Length" : "18:00",
     "Notes" : "555"
   }, {
     "ID" : 5,
     "Name" : "Microbiology",
     "Lecturer" : "Dr.Fekete Csaba",
     "Type" : "Lecture",
-    "Day" : "Friday",
-    "Time" : "2:00",
-    "Length" : "1:30",
+    "Day" : "Thursday",
+    "Time" : "19:00",
+    "Length" : "20:00",
     "Notes" : "666"
+  }, {
+    "ID" : 6,
+    "Name" : "Gastronomy",
+    "Lecturer" : "Dr.Gazdag Zoltán",
+    "Type" : "Lecture",
+    "Day" : "Friday",
+    "Time" : "08:00",
+    "Length" : "19:00",
+    "Notes" : "555"
   } ]
 }

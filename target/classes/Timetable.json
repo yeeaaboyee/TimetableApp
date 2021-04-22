@@ -1,57 +1,111 @@
 {
   "Classes" : [ {
     "ID" : 0,
-    "Name" : "Toxicology",
-    "Lecturer" : "Dr.Papp Gábor",
-    "Type" : "Lecture",
+    "Name" : "EEEE",
+    "Lecturer" : "",
+    "Type" : "",
     "Day" : "Monday",
-    "Time" : "5:00",
-    "Length" : "2:30",
-    "Notes" : "111"
+    "Time" : "08:00",
+    "Length" : "09:00",
+    "Notes" : ""
   }, {
     "ID" : 1,
-    "Name" : "Microbiology",
-    "Lecturer" : "Dr.Fekete Csaba",
-    "Type" : "Lecture",
-    "Day" : "Tuesday",
-    "Time" : "12:00",
-    "Length" : "1:30",
-    "Notes" : "222"
-  }, {
-    "ID" : 2,
-    "Name" : "Micro-Technology",
-    "Lecturer" : "Dr.Pollák Edit",
-    "Type" : "Lecture",
-    "Day" : "Tuesday",
-    "Time" : "2:00",
-    "Length" : "4:00",
-    "Notes" : "333"
+    "Name" : "",
+    "Lecturer" : "",
+    "Type" : "",
+    "Day" : "Monday",
+    "Time" : "10:00",
+    "Length" : "11:00",
+    "Notes" : ""
   }, {
     "ID" : 3,
-    "Name" : "Microbiology",
-    "Lecturer" : "Dr.Fekete Csaba",
-    "Type" : "Lecture",
-    "Day" : "Wednesday",
-    "Time" : "2:00",
-    "Length" : "4:00",
-    "Notes" : "444"
+    "Name" : "",
+    "Lecturer" : "",
+    "Type" : "",
+    "Day" : "Monday",
+    "Time" : "12:00",
+    "Length" : "13:00",
+    "Notes" : ""
   }, {
-    "ID" : 4,
-    "Name" : "Gastronomy",
-    "Lecturer" : "Dr.Gazdag Zoltán",
-    "Type" : "Lecture",
-    "Day" : "Thursday",
-    "Time" : "5:00",
-    "Length" : "2:30",
-    "Notes" : "555"
+    "ID" : 6,
+    "Name" : "",
+    "Lecturer" : "",
+    "Type" : "",
+    "Day" : "Tuesday",
+    "Time" : "09:00",
+    "Length" : "10:00",
+    "Notes" : ""
+  }, {
+    "ID" : 10,
+    "Name" : "",
+    "Lecturer" : "",
+    "Type" : "",
+    "Day" : "Tuesday",
+    "Time" : "11:00",
+    "Length" : "12:00",
+    "Notes" : ""
   }, {
     "ID" : 5,
-    "Name" : "Microbiology",
-    "Lecturer" : "Dr.Fekete Csaba",
-    "Type" : "Lecture",
-    "Day" : "Friday",
-    "Time" : "2:00",
-    "Length" : "1:30",
-    "Notes" : "666"
+    "Name" : "",
+    "Lecturer" : "",
+    "Type" : "",
+    "Day" : "Monday",
+    "Time" : "14:00",
+    "Length" : "15:00",
+    "Notes" : ""
+  }, {
+    "ID" : 11,
+    "Name" : "",
+    "Lecturer" : "",
+    "Type" : "",
+    "Day" : "Monday",
+    "Time" : "16:00",
+    "Length" : "17:00",
+    "Notes" : ""
+  }, {
+    "ID" : 18,
+    "Name" : "",
+    "Lecturer" : "",
+    "Type" : "",
+    "Day" : "Monday",
+    "Time" : "18:00",
+    "Length" : "19:00",
+    "Notes" : ""
+  }, {
+    "ID" : 8,
+    "Name" : "",
+    "Lecturer" : "",
+    "Type" : "",
+    "Day" : "Tuesday",
+    "Time" : "13:00",
+    "Length" : "14:00",
+    "Notes" : ""
+  }, {
+    "ID" : 17,
+    "Name" : "",
+    "Lecturer" : "",
+    "Type" : "",
+    "Day" : "Tuesday",
+    "Time" : "15:00",
+    "Length" : "16:00",
+    "Notes" : ""
+  }, {
+    "ID" : 10,
+    "Name" : "",
+    "Lecturer" : "",
+    "Type" : "",
+    "Day" : "Tuesday",
+    "Time" : "17:00",
+    "Length" : "18:00",
+    "Notes" : ""
+  }, {
+    "ID" : 21,
+    "Name" : "",
+    "Lecturer" : "",
+    "Type" : "",
+    "Day" : "Tuesday",
+    "Time" : "19:00",
+    "Length" : "20:00",
+    "Notes" : ""
   } ]
 }
