@@ -54,15 +54,6 @@
     "Length" : "15:00",
     "Notes" : ""
   }, {
-    "ID" : 11,
-    "Name" : "",
-    "Lecturer" : "",
-    "Type" : "",
-    "Day" : "Monday",
-    "Time" : "16:00",
-    "Length" : "17:00",
-    "Notes" : ""
-  }, {
     "ID" : 18,
     "Name" : "",
     "Lecturer" : "",
@@ -106,6 +97,15 @@
     "Day" : "Tuesday",
     "Time" : "19:00",
     "Length" : "20:00",
+    "Notes" : ""
+  }, {
+    "ID" : 11,
+    "Name" : "",
+    "Lecturer" : "",
+    "Type" : "",
+    "Day" : "Monday",
+    "Time" : "16:00",
+    "Length" : "17:00",
     "Notes" : ""
   } ]
 }
