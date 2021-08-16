@@ -58,5 +58,4 @@ public class Class {
     public String getNotes() {
         return notes;
     }
-
 }
