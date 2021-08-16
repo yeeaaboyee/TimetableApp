@@ -128,7 +128,13 @@ public class Data {
     }
 
     public void editClass(int id, Class replacementClass) {
-        deleteClass(id);
-        addClass(replacementClass.getName(), replacementClass.getLecturer(), replacementClass.getType(), replacementClass.getDay(), replacementClass.getTime(), replacementClass.getLength(), replacementClass.getNotes());
-    }
+        deleteClass(id); // Delete the old class.
+        addClass(replacementClass.getName(),
+                replacementClass.getLecturer(),
+                replacementClass.getType(),
+                replacementClass.getDay(),
+                replacementClass.getTime(),
+                replacementClass.getLength(),
+                replacementClass.getNotes());
+    } // Add the new class.
 }
