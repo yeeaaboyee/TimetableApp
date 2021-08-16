@@ -2,6 +2,7 @@ package org.micha;
 
 public class Class {
 
+    //Class object. Simple object to hold values for the classes in the timetable.
     private static int count = 0;
     private final int id;
     private final String name;
@@ -13,7 +14,7 @@ public class Class {
     private final String notes;
 
     public Class(String theName, String theLecturer, String theType, String theDay, String theTime, String theLength, String theNotes) {
-        id = count++;
+        id = count++; // "id" is static. Creating new class objects will give each one an id one number higher than the last one.
         name = theName;
         lecturer = theLecturer;
         type = theType;
