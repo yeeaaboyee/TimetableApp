@@ -128,34 +128,7 @@ public class Data {
     }
 
     public void editClass(int id, Class replacementClass) {
-        try {
-            ClassLoader classloader = this.getClass().getClassLoader();
-            File timetable = new File(classloader.getResource("Timetable.json").getFile());
-            ObjectMapper mapper = new ObjectMapper();
-            mapper.enable(SerializationFeature.INDENT_OUTPUT);
-            ObjectNode root = (ObjectNode) mapper.readTree(timetable);
-            ArrayNode array = (ArrayNode) root.get("Classes");
-            // Above code converts JSON to an ArrayNode of class data.
-
-            for (int i = 0; i < array.size(); i++) {
-                if (array.get(i).get("ID").asInt() == id) { // If the id matches the one provided...
-                    JsonNode jsontemp = array.get(i);
-                    ObjectNode objtemp = (ObjectNode) jsontemp;
-                    objtemp.put("Name", replacementClass.getName());
-                    objtemp.put("Lecturer", replacementClass.getLecturer());
-                    objtemp.put("Type", replacementClass.getType());
-                    objtemp.put("Day", replacementClass.getDay());
-                    objtemp.put("Time", replacementClass.getTime());
-                    objtemp.put("Length", replacementClass.getLength());
-                    objtemp.put("Notes", replacementClass.getNotes());
-                    // ...then replace the class data with the data provided.
-                }
-            }
-            root.replace("Classes", array); // Replace the array with the new one.
-            mapper.writeValue(timetable, root); // Write it to the JSON file.
-            refreshData(); // Refresh the list.
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        deleteClass(id);
+        addClass(replacementClass.getName(), replacementClass.getLecturer(), replacementClass.getType(), replacementClass.getDay(), replacementClass.getTime(), replacementClass.getLength(), replacementClass.getNotes());
     }
 }
